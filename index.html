@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayne's Empire</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="brand">
+            <img src="images/logo.png" alt="J-L" class="brand-logo">
+            Jayne's Empire
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="wigs.html">Wigs</a></li>
+                <li><a href="crochet.html">Crochet</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Jayne's Empire</h1>
+        <p>Wigs, Crochet & More – Handmade with love</p>
+    </section>
+
+    <hr>
+
+    <!-- About -->
+    <section class="about fade-in">
+        <h2>About Us ✅📝</h2>
+        <p>[Fill in this section with the brand mission or story]</p>
+    </section>
+
+    <hr>
+
+    <!-- Collections -->
+    <section class="collections">
+        <h2>Our Collections</h2>
+        <div class="collection-grid">
+            <a href="wigs.html" class="collection-card" style=" background-image:
+                url('./resources/background.jpg');">
+                <h3>Wigs</h3>
+                <p>Explore stylish wigs for every vibe</p>
+            </a>
+            <a href="crochet.html" class="collection-card">
+                <h3>Crochet</h3>
+                <p>Handcrafted crochet pieces</p>
+            </a>
+            <a href="coming-soon.html" class="collection-card">
+                <h3>Coming Soon</h3>
+                <p>Stay tuned for something new!</p>
+            </a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- How to Order -->
+    <section class="order-steps fade-in">
+        <h2>How to Order 🛒🛒</h2>
+        <ol>
+            <li>Browse any of our product pages (Wigs or Crochet).</li>
+            <br>
+            <li>Take a screenshot of the product(s) you love.</li>
+            <br>
+            <li>Send the screenshot via WhatsApp or Instagram using the icons below.</li>
+            <br>
+            <li>We'll confirm your order and arrange delivery!</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- Testimonials -->
+    <section class="testimonials fade-in">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Absolutely love the wig quality! Super soft and full."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>— Amaka O.</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Best crochet styles ever. I keep coming back!"</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>— Favour A.</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Beautiful packaging and great customer service."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>— Sandra M.</span>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>Get in Touch </h2>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:someone@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+234"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jayne's Empire. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+
+        // Loader
+        window.addEventListener("load", function () {
+            document.getElementById("loader").style.display = "none";
+        });
+
+        // Fade-in effect for elements
+        const fadeElems = document.querySelectorAll('.fade-in');
+        window.addEventListener('scroll', () => {
+            fadeElems.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

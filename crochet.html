@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crochet – Jayne's Empire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="brand">Jayne's Empire</div>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wigs.html">Wigs</a></li>
+                <li><a href="crochet.html" class="active">Crochet</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>Crochet Collection</h2>
+        <p>Take a screenshot of any product you love and send it to us on WhatsApp or Instagram to order.</p>
+    </section>
+
+    <section class="collections">
+        <div class="collection-grid">
+            <!-- Product Card -->
+            <div class="collection-card">
+                <h3>Sample Crochet</h3>
+                <p>Short description here</p>
+            </div>
+            <div class="collection-card">
+                <h3>Another Crochet</h3>
+                <p>Short description here</p>
+            </div>
+            <!-- Repeat for more products -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jayne's Empire – Crochet</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+
+        // Loader
+        window.addEventListener("load", function () {
+            document.getElementById("loader").style.display = "none";
+        });
+
+    </script>
+
+</body>
+
+</html>
