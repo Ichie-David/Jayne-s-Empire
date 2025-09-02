@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coming Soon – Jayne's Empire</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="./resources/favicon.ico">
 </head>
 
 <body>
@@ -13,6 +14,15 @@
     <!-- loader -->
     <div id="loader">
         <div class="spinner"></div>
+    </div>
+
+    <!-- Under Construction Popup -->
+    <div id="popup-overlay">
+        <div class="popup-box">
+            <h2>🚧 Page Under Development 🚧</h2>
+            <p>We’re still working on this page. Please check back later!</p>
+            <a href="index.html" class="popup-btn">Go Back Home</a>
+        </div>
     </div>
 
 
@@ -50,6 +60,9 @@
         window.addEventListener("load", function () {
             document.getElementById("loader").style.display = "none";
         });
+
+        // Disable scrolling when popup is active for Page under construction Pop-up window
+        document.body.style.overflow = "hidden";
 
     </script>
 
